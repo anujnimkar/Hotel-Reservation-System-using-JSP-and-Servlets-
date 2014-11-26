@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>NewHotelReservation</display-name>
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>HotelReservationContoller</display-name>
+    <servlet-name>HotelReservationContoller</servlet-name>
+    <servlet-class>com.igate.controller.HotelReservationContoller</servlet-class>
+    
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HotelReservationContoller</servlet-name>
+    <url-pattern>/HotelReservationContoller</url-pattern>
+  </servlet-mapping>
+   
+  <resource-ref>
+    <description>DBConnection</description>
+    <res-ref-name>OracleDS</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <filter>
+    <display-name>HotelFilter</display-name>
+    <filter-name>HotelFilter</filter-name>
+    <filter-class>com.igate.filter.HotelFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>HotelFilter</filter-name>
+    <url-pattern>/HotelReservationContoller</url-pattern>
+  </filter-mapping>
+  
+</web-app>

@@ -1,0 +1,6 @@
+<jboss-web>
+<resource-ref>
+<res-ref-name>OracleDS</res-ref-name>
+<jndi-name>java:OracleDS</jndi-name>
+</resource-ref>
+</jboss-web>

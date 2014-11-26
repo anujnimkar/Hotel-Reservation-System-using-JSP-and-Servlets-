@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="NewHotelReservationfull">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="standard.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/standard/standard">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.9.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/log4j-1.2.9/log4j-1.2.9">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jstl/jstl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classes12.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/classes12/classes12">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="NewHotelReservationfull"/>
+        <property name="java-output-path"/>
+    </wb-module>
+</project-modules>
